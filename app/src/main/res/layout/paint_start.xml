@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Start_paint"
+        android:orientation="vertical"
+        android:background="#fff0f5"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/makeselection"
+            android:text="@string/select_colour"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginStart="48dp"
+            android:layout_below="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/texthex"
+            android:layout_marginLeft="1dp"
+            android:layout_alignBaseline="@+id/makeselection"
+            android:layout_alignBottom="@+id/makeselection"
+            android:layout_alignStart="@+id/wwidth"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"/>
+
+            </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wall"
+            android:text="@string/wall_in_feet"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_below="@+id/texthex"
+            android:layout_alignEnd="@+id/makeselection"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="48dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:id="@+id/wheight"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/height"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittextstyle"
+            android:layout_above="@+id/door"
+            android:layout_alignStart="@+id/door"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginStart="48dp"/>
+
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:id="@+id/wwidth"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/width"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittextstyle"
+            android:layout_alignBottom="@+id/wheight"
+            android:layout_alignLeft="@+id/dwidth"
+            android:layout_alignStart="@+id/dwidth"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="48dp"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/door"
+            android:text="@string/door_in_feet"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_above="@+id/dheight"
+            android:layout_alignStart="@+id/dheight"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="48dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:id="@+id/dheight"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/height"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittextstyle"
+            android:layout_above="@+id/win"
+            android:layout_alignStart="@+id/win"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="48dp"  />
+
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:id="@+id/dwidth"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/width"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittextstyle"
+            android:layout_alignBottom="@+id/dheight"
+            android:layout_toEndOf="@+id/win"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="48dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/win"
+            android:text="@string/window_in_feet"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_above="@+id/winheight"
+            android:layout_alignStart="@+id/winheight"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="48dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:id="@+id/winheight"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/height"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittextstyle"
+            android:layout_above="@+id/spinner"
+            android:layout_alignStart="@+id/Surface"
+            android:layout_marginBottom="19dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="48dp"/>
+
+
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:id="@+id/winwidth"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/width"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittextstyle"
+            android:layout_alignBottom="@+id/winheight"
+            android:layout_toEndOf="@+id/win"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="48dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Surface"
+            android:text="Surface:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_above="@+id/spinner2"
+            android:layout_alignStart="@+id/PaintType"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="48dp"/>
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinner"
+            android:layout_alignTop="@+id/Surface"
+            android:layout_alignStart="@+id/winwidth"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="75dp">
+
+        </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PaintType"
+            android:text="Paint Type:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_alignBottom="@+id/calculate"
+            android:layout_alignStart="@+id/makeselection"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="48dp"/>
+
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinner2"
+            android:layout_alignBottom="@+id/PaintType"
+            android:layout_alignLeft="@+id/spinner"
+            android:layout_alignStart="@+id/spinner"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="48dp">
+        </Spinner>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculate"
+            android:text="Calculate"
+            android:layout_above="@+id/editCost"
+            android:layout_toEndOf="@+id/PaintType"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="150dp"/>
+
+
+        <LinearLayout
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/amtpaint"
+                android:layout_marginLeft="10dp"
+                android:text="Amount of paint:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="48dp"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edittextstyle"
+                android:id="@+id/editamount"
+                android:layout_above="@+id/editCost"
+                android:layout_alignStart="@+id/editCost"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/costpaint"
+                android:text="Total Cost:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_alignBaseline="@+id/editCost"
+                android:layout_alignBottom="@+id/editCost"
+                android:layout_alignStart="@+id/amtpaint"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="48dp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittextstyle"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/editCost"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/texthex"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"/>
+
+         </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

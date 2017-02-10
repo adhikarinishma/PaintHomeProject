@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">PAINTHOME</string>
+    <string name="title_activity_my">Dealers List</string>
+    <string name="title_activity_about">Start Paint</string>
+    <string name="title_activity_contact">Gallery</string>
+    <string name="ok">OK</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="text_with_paragraph">            PAINTHOME is a virtual paint app which can facilitate the user to paint the exterior
+    and interior of their home as per their choice.It also helps user to calculate the cost and amount of paint required
+    for the certain height and width input made by the user.This app also offers the list of dealers throughout the country
+    which assists the user to find the paint dealer near to him.</string>
+
+    <string name="contact_format">Asian Paints Pvt. Ltd.\n \n Authorized : Surya Nepal Pvt. Ltd \n \n
+        Head Office: \n \n Baneshwar Kathmandu, Nepal \n \n
+        Phone no : 01-1111111 \n
+        \t \t \t \t \t \t \t \t \t \t \t 01-4444444
+    \n
+    \n
+    Sales and Marketing :\n
+        \n
+
+     Phone no :01-4545454 \n
+        \t \t \t \t \t \t \t \t \t \t 01-4343434
+    </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="wall">Wall</string>
+    <string name="select_colour">Select Colour:</string>
+    <string name="width">Width</string>
+    <string name="door_in_feet">Door(in feet):</string>
+    <string name="window_in_feet">Window(in feet):</string>
+    <string name="height">Height</string>
+    <string name="colour_pallete">Colour Pallete</string>
+    <string name="wall_in_feet">Wall(in feet):</string>
+
+    <string name="text_for_paintcalculator">  Hint: \n If you are planning to color your home,you just need to be sure with
+        the height and width of your wall,doors and windows.The metrics used be in feet.You can simply type in the height
+        and width of it. Choose the quality of paint and quality of surface as per your desire.\n Go to the Color Pallette
+        below and select the color from the various shades available.</string>
+
+</resources>
